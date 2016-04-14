@@ -33,16 +33,9 @@ class Ladder {
 	}
 	
 	
-//	private void findLargestGap() {
-//		int currGap = 0;
-//		for(int i = 1; i < steps.length - 1; i++) {
-//			currGap = steps[i] - steps[i - 1];
-//			if(currGap > largestGap) largestGap = currGap;
-//		}
-//	}
-	
 	private void findLargestGap() {
 		int currGap = 0;
+		// create an array and use the for loop as before. Some casting was necessary.
 		Object [] stepsArray = steps.toArray();
 		for(int i = 1; i < stepsArray.length; i++) {
 			currGap = (int)stepsArray[i] - (int)stepsArray[i - 1];
