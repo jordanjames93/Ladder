@@ -13,7 +13,8 @@ class Ladder {
 	
 	void getSteps() {
 		System.out.println("Enter the " + numSteps + " step heights(number greater than 0): ");
-		for(int i = 0; i < numSteps; i++) {
+		int i; // test case: i = -1
+		for(i = -1; i < numSteps; i++) {
 			// Check that input is a number
 			if(!input.hasNextInt()) {
 				input.next();
