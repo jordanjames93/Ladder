@@ -3,7 +3,7 @@ import java.util.TreeSet;
 
 class Ladder {
 	private int numSteps;
-	TreeSet<Integer> steps = new TreeSet<Integer>(); // Keeps the data sorted. Removes duplicates.
+	private TreeSet<Integer> steps = new TreeSet<Integer>(); // Keeps the data sorted. Removes duplicates.
 	private int largestGap = 0;
 	private Scanner input = new Scanner(System.in);
 	
@@ -11,7 +11,7 @@ class Ladder {
 		this.numSteps = numSteps;
 	}
 	
-	void getSteps() {
+	private void getSteps() {
 		System.out.println("Enter the " + numSteps + " step heights(number greater than 0): ");
 		for(int i = 0; i < numSteps; i++) {
 			// Check that input is a number
